@@ -14,6 +14,29 @@
             document.documentElement.classList.add(className);
         }));
     }
+    let isMobile = {
+        Android: function() {
+            return navigator.userAgent.match(/Android/i);
+        },
+        BlackBerry: function() {
+            return navigator.userAgent.match(/BlackBerry/i);
+        },
+        iOS: function() {
+            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+        },
+        Opera: function() {
+            return navigator.userAgent.match(/Opera Mini/i);
+        },
+        Windows: function() {
+            return navigator.userAgent.match(/IEMobile/i);
+        },
+        any: function() {
+            return isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows();
+        }
+    };
+    function addTouchClass() {
+        if (isMobile.any()) document.documentElement.classList.add("touch");
+    }
     function getHash() {
         if (location.hash) return location.hash.replace("#", "");
     }
@@ -399,8 +422,35 @@
             saveTheme ? localStorage.setItem("user-theme", newTheme) : null;
         }
     }
+    const skillsItems = document.querySelectorAll(".card-skills__rating");
+    for (let i = 0; i < skillsItems.length; i++) {
+        const skillsItem = skillsItems[i];
+        document.getElementsByClassName("card-skills__block");
+        for (let j = 0; j < 100; j++) {
+            let rotate = 3.6 * j + "deg";
+            skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s;" class="card-skills__block"></div>`;
+        }
+    }
+    const counters = document.querySelectorAll(".card-skills__counter");
+    for (let i = 0; i < counters.length; i++) {
+        const counter = counters[i];
+        counter.innerText = 0;
+        const target = +counter.getAttribute("data-target");
+        const timeForAnimate = 2500 / 100;
+        const numberCounter = () => {
+            const value = +counter.innerText;
+            if (value < target) {
+                counter.innerText = Math.ceil(value + 1);
+                setTimeout((() => {
+                    numberCounter();
+                }), timeForAnimate);
+            }
+        };
+        numberCounter();
+    }
     window["FLS"] = false;
     isWebp();
+    addTouchClass();
     menuInit();
     pageNavigation();
     headerScroll();
