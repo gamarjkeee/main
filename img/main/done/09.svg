@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<svg width="1882" height="1489" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <defs>
+  <clipPath id="clip0">
+   <rect fill="white" height="1489" id="svg_1" width="1882"/>
+  </clipPath>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g clip-path="url(#clip0)" id="svg_2">
+   <path d="m1,1488l1882,0l0,-43.12l-1882,0l0,43.12z" fill="#A5B7C6" id="svg_90"/>
+  </g>
+ </g>
+</svg>

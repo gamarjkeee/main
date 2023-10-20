@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231011190907">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231020215616">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-lp class="header">
 			<div class="header__container">
 				<div class="header__box">
 					<a href="index.html" class="header__logo logo"><span>R</span></a>
@@ -22,16 +22,16 @@
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="#" class="menu__link">About me <span class="_icon-person"></span></a>
+									<a href="#" data-goto-header data-goto=".about" class="menu__link">About me <span class="_icon-person"></span></a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Skills <span class="_icon-list"></span></a>
+									<a href="#" data-goto-header data-goto=".skills" class="menu__link">Skills <span class="_icon-list"></span></a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Portfolio <span class="_icon-case"></span></a>
+									<a href="#" data-goto-header data-goto=".portfolio" class="menu__link">Portfolio <span class="_icon-case"></span></a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Contact <span class="_icon-chat"></span></a>
+									<a href="#" data-goto-header data-goto=".contact" class="menu__link">Contact <span class="_icon-chat"></span></a>
 								</li>
 							</ul>
 						</nav>
@@ -47,152 +47,244 @@
 		</header>
 
 		<main class="page">
-			<ul data-da=".menu__body, 768, 2" class="social">
-				<li class="social__item">
+			<ul data-da=".menu__body, 768, 2" data-lp class="social">
+				<button type="button" class="social__toggle">
+					<span class="_icon-menu"></span>
+					<span class="_icon-close"></span>
+				</button>
+				<li class="social__item" style="--i: 1; --clr: #00a0e3">
 					<a target="_blank" href="https://t.me/gamarjkeee" class="social__link _icon-telegram"></a>
 				</li>
-				<li class="social__item">
+				<li class="social__item" style="--i: 2; --clr: #0a66c2">
 					<a target="_blank" href="https://www.linkedin.com/in/ruslan-musienko-934817251/" class="social__link _icon-linkedin"></a>
 				</li>
-				<li class="social__item">
+				<li class="social__item" style="--i: 3; --clr: #0866ff">
 					<a target="_blank" href="#" class="social__link _icon-facebook"></a>
 				</li>
-				<li class="social__item">
+				<li class="social__item" style="--i: 4; --clr: #ef0074">
 					<a target="_blank" href="https://www.instagram.com/rus.musienko/" class="social__link _icon-instagram"></a>
 				</li>
-				<li class="social__item">
+				<li class="social__item" style="--i: 5; --clr: #000000">
 					<a target="_blank" href="#" class="social__link _icon-github"></a>
 				</li>
-				<li class="social__item">
+				<li class="social__item" style="--i: 6; --clr: #e94134">
 					<a target="_blank" href="mailto:musienko.work@gmail.com" class="social__link _icon-mail"></a>
 				</li>
 			</ul>
-			<section class="about">
+			<section class="main" data-watch="navigator" data-watch-threshold="0.5">
+				<div class="main__info info-main">
+					<h1 class="info-main__title title title--main">
+						Hello my friend! <span>Welcome</span> on my personal site.
+					</h1>
+					<div class="info-main__text text">
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+							libero atque cum nesciunt voluptate dolores tenetur consectetur
+							iusto placeat nemo. Id maxime voluptatem maiores omnis
+							reiciendis fugit adipisci nobis debitis!
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+							libero atque cum nesciunt voluptate dolores tenetur consectetur
+							iusto placeat nemo.
+						</p>
+					</div>
+					<a class="info-main__button button" href="#" data-goto-header data-goto=".portfolio">View Portfolio</a>
+				</div>
+				<div class="main__image">
+					<img src="img/main/done/01.svg" data-prlx-mouse data-prlx-cy="1500" data-prlx-cx="600" alt="Image" />
+					<img src="img/main/done/02.svg" data-prlx-mouse data-prlx-cy="1500" data-prlx-cx="600" alt="Image" />
+					<img src="img/main/done/03.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
+					<img src="img/main/done/04.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
+					<img src="img/main/done/05.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
+					<img src="img/main/done/06.svg" data-prlx-mouse data-prlx-cy="600" data-prlx-cx="250" alt="Image" />
+					<img src="img/main/done/07.svg" data-prlx-mouse data-prlx-cy="600" data-prlx-cx="250" alt="Image" />
+					<img src="img/main/done/08.svg" data-prlx-mouse data-prlx-cy="450" data-prlx-cx="150" alt="Image" />
+					<img src="img/main/done/09.svg" data-prlx-mouse data-prlx-cy="450" data-prlx-cx="150" alt="Image" />
+					<img src="img/main/main.svg" alt="Image" />
+				</div>
+			</section>
+			<section class="about" data-watch="navigator" data-watch-threshold="0.5">
 				<div class="about__container">
 					<h2 class="about__title title">About me.</h2>
 					<div class="about__text text">
 						<p>I'm a frontend developer based in cozy Cherkassy, Ukraine.</p>
 					</div>
 					<div class="about__body">
-						<div class="about__info info-about">
-							<div class="info-about__line">
-								<div class="info-about__name _icon-person">Name:</div>
-								<div class="info-about__value">Ruslan Musienko</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-stopwatch">Age:</div>
-								<div class="info-about__value">32</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-family">Family:</div>
-								<div class="info-about__value">
-									Have a beautiful wife and son
-								</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-education">Education:</div>
-								<div class="info-about__value">
-									Master's degree of computer networks and systems
-								</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-sport">
-									Favorite sports:
-								</div>
-								<div class="info-about__value">
-									Football, basketball, boxing, gymnastics, e-sports.
-								</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-video-camera">
-									Favorite movies:
-								</div>
-								<div class="info-about__value">
-									<a target="_blank" href="https://www.imdb.com/title/tt0111161/?ref_=chttp_t_1">The Shawshank Redemption,</a>
-									<a target="_blank" href="https://www.imdb.com/title/tt0110912/?ref_=chttp_t_8">Pulp Fiction,</a>
-									<a target="_blank" href="https://www.imdb.com/title/tt0109830/?ref_=chttp_t_11">Forrest Gump,</a>
-									<a target="_blank" href="https://www.imdb.com/title/tt0816692/?ref_=chttp_t_23">Interstellar,</a>
-									<a target="_blank" href="https://www.imdb.com/title/tt1130884/?ref_=chttp_t_141">Shutter Island</a>
-								</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-music">
-									Favorite music:
-								</div>
-								<div class="info-about__value">
-									<a target="_blank" href="https://music.youtube.com/channel/UCxgN32UVVztKAQd2HkXzBtw">Linkin Park,</a>
-									<a target="_blank" href="https://music.youtube.com/channel/UCOEO40PfRXSKhslXNgS0H8Q">The Prodigy,</a>
-									<a target="_blank" href="https://music.youtube.com/channel/UCs6GGpd9zvsYghuYe0VDFUQ">Rammstein,</a>
-									<a target="_blank" href="https://music.youtube.com/channel/UCDJftX2zx_UT_QSnBGIF96w">System Of A Down,</a>
-									<a target="_blank" href="https://music.youtube.com/channel/UCedvOgsKFzcK3hA5taf3KoQ">Eminem</a>
-								</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-spoon-knife">
-									Favorite dishes:
-								</div>
-								<div class="info-about__value">
-									<a target="_blank" href="https://www.netflix.com/browse/m/person/70026618?jbv=81676070">Ukrainian borsch</a>, Japanese sushi, Italian pizza and pasta
-								</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-steam2">
-									Favorite PC games:
-								</div>
-								<div class="info-about__value">
-									<a target="_blank" href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/">The Witcher® 3: Wild Hunt,</a>
-									<a target="_blank" href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">Red Dead Redemption 2,</a>
-									<a target="_blank" href="https://store.steampowered.com/app/730/CounterStrike_2/">Counter-Strike 2,</a>
-									<a target="_blank" href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/">Hogwarts Legacy,</a>
-									<a target="_blank" href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">Grand Theft Auto V</a>
-								</div>
-							</div>
-							<div class="info-about__line">
-								<div class="info-about__name _icon-dice">My hobbies:</div>
-								<div class="info-about__value">
-									sport (calisthenics), breakdance, cooking, plaing PC games.
-								</div>
-							</div>
-						</div>
 						<div class="about__image">
 							<img src="img/about/main.svg" alt="Photo" />
 						</div>
-					</div>
-					<!-- <div class="about__lifeline lifeline-about">
-              <h3 class="lifeline-about__title">
-                Do You want to see the story of my life in 10 seconds? Press
-                "GO!"
-              </h3>
-              <button type="button" class="lifeline-about__button">GO!</button>
-              <div class="lifeline-about__body">
-                <div class="lifeline-about__line line-lifeline-about">
-                  <span class="line-lifeline-about__runner"
-                    ><iframe
-                      src="https://giphy.com/embed/TgFtjHccwviciJ92zU"
-                      width="60"
-                      height="60"
-                      frameborder="0"
-                      class="giphy-embed"
-                      allowfullscreen></iframe>
-                  </span>
-                  <span><i></i><i></i></span><span><i></i><i></i></span
-                  ><span><i></i><i></i></span><span><i></i><i></i></span
-                  ><span><i></i><i></i></span><span><i></i><i></i></span>
-                  <span><i></i><i></i></span><span><i></i><i></i></span>
-                </div>
-              </div>
-            </div> -->
-					<div class="about__diploms diploms-about">
-						<div class="diploms-about__item">
-							<picture><source srcset="img/skills/01.webp" type="image/webp"><img src="img/skills/01.jpg" alt="" /></picture>
+						<div class="about__main-text main-text-about">
+							<div class="main-text-about__box">
+								<div class="main-text-about__text">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Autem quo quisquam temporibus voluptas quia reprehenderit
+										architecto libero, repellat itaque consectetur.
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Distinctio, eos? Voluptatem earum assumenda cumque nam
+										sunt facere mollitia, sed beatae modi rem aperiam iste
+										laborum facilis quis molestiae, fugit porro! laborum
+										facilis quis molestiae, fugit porro!
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Autem quo quisquam temporibus voluptas quia reprehenderit
+										architecto libero, repellat itaque consectetur.
+									</p>
+								</div>
+								<button class="main-text-about__button button button--small" type="button">
+									<span>Show</span> <span>Close</span> interesting facts
+								</button>
+							</div>
+							<div class="main-text-about__info info-about">
+								<div class="info-about__line">
+									<div class="info-about__name _icon-person">Name:</div>
+									<div class="info-about__value">Ruslan Musienko</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-stopwatch">Age:</div>
+									<div class="info-about__value">32</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-family">Family:</div>
+									<div class="info-about__value">
+										Have a beautiful wife and son
+									</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-education">
+										Education:
+									</div>
+									<div class="info-about__value">
+										Master's degree of computer networks and systems
+									</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-sport">
+										Favorite sports:
+									</div>
+									<div class="info-about__value">
+										Football, basketball, boxing, gymnastics, e-sports.
+									</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-video-camera">
+										Favorite movies:
+									</div>
+									<div class="info-about__value">
+										<a target="_blank" href="https://www.imdb.com/title/tt0111161/?ref_=chttp_t_1">The Shawshank Redemption,</a>
+										<a target="_blank" href="https://www.imdb.com/title/tt0110912/?ref_=chttp_t_8">Pulp Fiction,</a>
+										<a target="_blank" href="https://www.imdb.com/title/tt0109830/?ref_=chttp_t_11">Forrest Gump,</a>
+										<a target="_blank" href="https://www.imdb.com/title/tt0816692/?ref_=chttp_t_23">Interstellar,</a>
+										<a target="_blank" href="https://www.imdb.com/title/tt1130884/?ref_=chttp_t_141">Shutter Island</a>
+									</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-music">
+										Favorite music:
+									</div>
+									<div class="info-about__value">
+										<a target="_blank" href="https://music.youtube.com/channel/UCxgN32UVVztKAQd2HkXzBtw">Linkin Park,</a>
+										<a target="_blank" href="https://music.youtube.com/channel/UCOEO40PfRXSKhslXNgS0H8Q">The Prodigy,</a>
+										<a target="_blank" href="https://music.youtube.com/channel/UCs6GGpd9zvsYghuYe0VDFUQ">Rammstein,</a>
+										<a target="_blank" href="https://music.youtube.com/channel/UCDJftX2zx_UT_QSnBGIF96w">System Of A Down,</a>
+										<a target="_blank" href="https://music.youtube.com/channel/UCedvOgsKFzcK3hA5taf3KoQ">Eminem</a>
+									</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-spoon-knife">
+										Favorite dishes:
+									</div>
+									<div class="info-about__value">
+										<a target="_blank" href="https://www.netflix.com/browse/m/person/70026618?jbv=81676070">Ukrainian borsch</a>, Japanese sushi, Italian pizza and pasta
+									</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-steam2">
+										Favorite PC games:
+									</div>
+									<div class="info-about__value">
+										<a target="_blank" href="https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/">The Witcher® 3: Wild Hunt,</a>
+										<a target="_blank" href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">Red Dead Redemption 2,</a>
+										<a target="_blank" href="https://store.steampowered.com/app/730/CounterStrike_2/">Counter-Strike 2,</a>
+										<a target="_blank" href="https://store.steampowered.com/app/990080/Hogwarts_Legacy/">Hogwarts Legacy,</a>
+										<a target="_blank" href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">Grand Theft Auto V</a>
+									</div>
+								</div>
+								<div class="info-about__line">
+									<div class="info-about__name _icon-dice">My hobbies:</div>
+									<div class="info-about__value">
+										sport (calisthenics), breakdance, cooking, plaing PC
+										games.
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="diploms-about__item">
-							<picture><source srcset="img/skills/02.webp" type="image/webp"><img src="img/skills/02.jpg" alt="" /></picture>
+					</div>
+					<div class="about__education education-about">
+						<h3 class="education-about__title _icon-book">
+							Where did I study?
+						</h3>
+						<div class="education-about__items">
+							<div class="education-about__item item-education-about">
+								<ul class="item-education-about__info">
+									<li>
+										<a target="_blank" href="https://www.linkedin.com/company/freelancerlifestyle/">Website design (HTML, CSS, JavaScript basics)</a>
+									</li>
+									<li class="_icon-stopwatch">
+										Study time: 4 months (90 hours)
+									</li>
+									<li>
+										Teacher:
+										<a target="_blank" href="https://www.linkedin.com/in/evgeniyandrikanich/">Yevhen Andrikanych</a>
+									</li>
+								</ul>
+								<div class="item-education-about__image">
+									<picture><source srcset="img/skills/02.webp" type="image/webp"><img src="img/skills/02.jpg" alt="Image" /></picture>
+								</div>
+							</div>
+							<div class="education-about__item item-education-about">
+								<ul class="item-education-about__info">
+									<li>
+										<a target="_blank" href="https://www.linkedin.com/company/freelancerlifestyle/">JavaScript cource</a>
+									</li>
+									<li class="_icon-stopwatch">
+										Study time: 3 months (70 hours)
+									</li>
+									<li>
+										Teacher:
+										<a target="_blank" href="https://www.linkedin.com/in/andrii-bryla-94a5b638/">Andrii Bryla</a>
+									</li>
+								</ul>
+								<div class="item-education-about__image">
+									<picture><source srcset="img/skills/01.webp" type="image/webp"><img src="img/skills/01.jpg" alt="Image" /></picture>
+								</div>
+							</div>
+							<div class="education-about__item item-education-about">
+								<ul class="item-education-about__info">
+									<li>
+										<a target="_blank" href="https://www.youtube.com/@FreelancerLifeStyle">YouTube channel "Freelancer Life Style"</a>
+									</li>
+									<li class="_icon-stopwatch">
+										Study time: during 1.5 years
+									</li>
+									<li>
+										Teacher:
+										<a target="_blank" href="https://www.linkedin.com/in/evgeniyandrikanich/">Yevhen Andrikanych</a>
+									</li>
+								</ul>
+								<div class="item-education-about__image">
+									<picture><source srcset="img/skills/01.webp" type="image/webp"><img src="img/skills/01.jpg" alt="Image" /></picture>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="skills">
+			<section class="skills" data-watch="navigator" data-watch-threshold="0.5">
 				<div class="skills__container">
 					<h2 class="skills__title title">Skills.</h2>
 					<div class="skills__text text">
@@ -200,7 +292,7 @@
 					</div>
 					<div class="skills__body">
 						<div class="skills__top">
-							<h3 class="skills__label _icon-ninja">Main skills</h3>
+							<h3 class="skills__label _icon-ninja">Main skills:</h3>
 							<div class="skills__cards">
 								<div class="skills__card card-skills">
 									<div class="card-skills__rating">
@@ -226,31 +318,59 @@
 							</div>
 						</div>
 						<div class="skills__bottom">
-							<h3 class="skills__label skills__label--small _icon-code">
-								Secondary skills
-							</h3>
 							<div class="skills__secondary secondary-skills">
-								<div class="secondary-skills__item">
-									<div class="secondary-skills__info">
-										Write clean code, without frameworks
-									</div>
-								</div>
-								<div class="secondary-skills__item">
-									<div class="secondary-skills__info">
-										Always cross-browser and responsive layout
-									</div>
-								</div>
-								<div class="secondary-skills__item">
-									<div class="secondary-skills__info">
-										Can make an adaptive mobile without a ready-made design.
-									</div>
-								</div>
+								<h3 class="secondary-skills__label _icon-code">
+									Technologies that I use:
+								</h3>
+								<ul class="secondary-skills__items">
+									<li class="secondary-skills__item">
+										Flexbox, CSS Grid Layout
+									</li>
+									<li class="secondary-skills__item">BEM</li>
+									<li class="secondary-skills__item">SASS (SCSS)</li>
+									<li class="secondary-skills__item">Git, GitHub</li>
+									<li class="secondary-skills__item">Gulp, Webpack</li>
+									<li class="secondary-skills__item">Figma, Photoshop</li>
+									<li class="secondary-skills__item">Iconic font</li>
+									<li class="secondary-skills__item">CSS/JS animations</li>
+								</ul>
+							</div>
+							<div class="skills__about-work about-work-skills">
+								<h3 class="about-work-skills__label _icon-case">
+									My work includes:
+								</h3>
+								<ul class="about-work-skills__items">
+									<li class="about-work-skills__item _icon-checkmark">
+										Responsive adaptive website for any screen.
+									</li>
+									<li class="about-work-skills__item _icon-checkmark">
+										Cross-browser compatibility (Chrome, Firefox, Yandex,
+										Microsoft Edge, Opera, Safari).
+									</li>
+									<li class="about-work-skills__item _icon-checkmark">
+										Checking the addition of content. Site doesn't break when
+										replacing images or text.
+									</li>
+									<li class="about-work-skills__item _icon-checkmark">
+										CSS3 and JavaScript animations (if needed).
+									</li>
+									<li class="about-work-skills__item _icon-checkmark">
+										Understandable code.
+									</li>
+									<li class="about-work-skills__item _icon-checkmark">
+										Optimization of website loading.
+									</li>
+									<li class="about-work-skills__item _icon-checkmark">
+										A piece of my soul for each project.
+									</li>
+								</ul>
 							</div>
 						</div>
+						<a href="#" data-goto-header data-goto=".contact" class="skills__button button">Let’s work together</a>
 					</div>
 				</div>
 			</section>
-			<section class="portfolio">
+			<section class="portfolio" data-watch="navigator" data-watch-threshold="0.3">
 				<div class="portfolio__container">
 					<h2 class="portfolio__title title">Portfolio.</h2>
 					<div class="portfolio__text text">
@@ -258,108 +378,171 @@
 					</div>
 					<div class="portfolio__items">
 						<div class="portfolio__item item-portfolio">
-							<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html" class="item-portfolio__image">
+							<a target="_blank" href="#" data-popup="#popup-01" class="item-portfolio__image">
 								<picture><source srcset="img/portfolio/01.webp" type="image/webp"><img src="img/portfolio/01.jpg" alt="Image" /></picture>
 							</a>
 							<h3 class="item-portfolio__title">
-								<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html">Lorem ipsum dolor sit amet.</a>
+								<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html">Adaptive site layout "FarmVest"</a>
 							</h3>
 							<div class="item-portfolio__text">
 								<p>Landing page</p>
 							</div>
-							<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html" class="item-portfolio__link">view the site ></a>
+							<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html" class="item-portfolio__button button button--small">
+								Open this site ></a>
 						</div>
 						<div class="portfolio__item item-portfolio">
-							<a href="#" class="item-portfolio__image">
+							<a href="#" data-popup="#popup-02" class="item-portfolio__image">
 								<picture><source srcset="img/portfolio/02.webp" type="image/webp"><img src="img/portfolio/02.jpg" alt="Image" /></picture>
 							</a>
 							<h3 class="item-portfolio__title">
-								<a href="#">Lorem ipsum dolor sit amet.</a>
+								<a target="_blank" href="https://gamarjkeee.github.io/ciclo/index.html">Adaptive site layout "Ciclo"</a>
 							</h3>
-							<a href="#" class="item-portfolio__text">
+							<div class="item-portfolio__text">
 								<p>Landing page</p>
-							</a>
+							</div>
+							<a target="_blank" href="https://gamarjkeee.github.io/ciclo/index.html" class="item-portfolio__button button button--small">
+								Open this site ></a>
 						</div>
 						<div class="portfolio__item item-portfolio">
-							<a href="#" class="item-portfolio__image">
+							<a href="#" data-popup="#popup-03" class="item-portfolio__image">
 								<picture><source srcset="img/portfolio/03.webp" type="image/webp"><img src="img/portfolio/03.jpg" alt="Image" /></picture>
 							</a>
 							<h3 class="item-portfolio__title">
-								<a href="#">Lorem ipsum dolor sit amet.</a>
+								<a target="_blank" href="https://gamarjkeee.github.io/homepro/index.html">Adaptive site layout "HomePro".</a>
 							</h3>
-							<a href="#" class="item-portfolio__text">
+							<div class="item-portfolio__text">
 								<p>Landing page</p>
-							</a>
+							</div>
+							<a target="_blank" href="https://gamarjkeee.github.io/homepro/index.html" class="item-portfolio__button button button--small">
+								Open this site ></a>
 						</div>
 						<div class="portfolio__item item-portfolio">
-							<a href="#" class="item-portfolio__image">
+							<a href="#" data-popup="#popup-04" class="item-portfolio__image">
 								<picture><source srcset="img/portfolio/04.webp" type="image/webp"><img src="img/portfolio/04.jpg" alt="Image" /></picture>
 							</a>
 							<h3 class="item-portfolio__title">
-								<a href="#">Lorem ipsum dolor sit amet.</a>
+								<a>Lorem ipsum dolor sit amet.</a>
 							</h3>
-							<a href="#" class="item-portfolio__text">
+							<div class="item-portfolio__text">
 								<p>Landing page</p>
-							</a>
+							</div>
+							<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html" class="item-portfolio__button button button--small">
+								Open this site ></a>
 						</div>
 						<div class="portfolio__item item-portfolio">
-							<a href="#" class="item-portfolio__image">
+							<a href="#" data-popup="#popup-05" class="item-portfolio__image">
 								<picture><source srcset="img/portfolio/05.webp" type="image/webp"><img src="img/portfolio/05.jpg" alt="Image" /></picture>
 							</a>
 							<h3 class="item-portfolio__title">
 								<a href="#">Lorem ipsum dolor sit amet.</a>
 							</h3>
-							<a href="#" class="item-portfolio__text">
+							<div href="#" class="item-portfolio__text">
 								<p>Landing page</p>
-							</a>
+							</div>
+							<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html" class="item-portfolio__button button button--small">
+								Open this site ></a>
 						</div>
 						<div class="portfolio__item item-portfolio">
-							<a href="#" class="item-portfolio__image">
+							<a href="#" data-popup="#popup-06" class="item-portfolio__image">
 								<picture><source srcset="img/portfolio/06.webp" type="image/webp"><img src="img/portfolio/06.jpg" alt="Image" /></picture>
 							</a>
 							<h3 class="item-portfolio__title">
 								<a href="#">Lorem ipsum dolor sit amet.</a>
 							</h3>
-							<a href="#" class="item-portfolio__text">
+							<div href="#" class="item-portfolio__text">
 								<p>Landing page</p>
-							</a>
+							</div>
+							<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html" class="item-portfolio__button button button--small">
+								Open this site ></a>
 						</div>
 						<div class="portfolio__item item-portfolio">
-							<a href="#" class="item-portfolio__image">
+							<a href="#" data-popup="#popup-07" class="item-portfolio__image">
 								<picture><source srcset="img/portfolio/07.webp" type="image/webp"><img src="img/portfolio/07.jpg" alt="Image" /></picture>
 							</a>
 							<h3 class="item-portfolio__title">
 								<a href="#">Lorem ipsum dolor sit amet.</a>
 							</h3>
-							<a href="#" class="item-portfolio__text">
+							<div href="#" class="item-portfolio__text">
 								<p>Landing page</p>
-							</a>
+							</div>
+							<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html" class="item-portfolio__button button button--small">
+								Open this site ></a>
 						</div>
 						<div class="portfolio__item item-portfolio">
-							<a href="#" class="item-portfolio__image">
+							<a href="#" data-popup="#popup-08" class="item-portfolio__image">
 								<picture><source srcset="img/portfolio/08.webp" type="image/webp"><img src="img/portfolio/08.jpg" alt="Image" /></picture>
 							</a>
 							<h3 class="item-portfolio__title">
 								<a href="#">Lorem ipsum dolor sit amet.</a>
 							</h3>
-							<a href="#" class="item-portfolio__text">
+							<div href="#" class="item-portfolio__text">
 								<p>Landing page</p>
-							</a>
+							</div>
+							<a target="_blank" href="https://gamarjkeee.github.io/farm-vest/home.html" class="item-portfolio__button button button--small">
+								Open this site ></a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<section class="contact">
-				<div class="contacts__container">
-					<h2 class="contacts__title title">Contact.</h2>
-					<div class="contacts__text text">
+			<section class="contact" data-watch="navigator" data-watch-threshold="0.51">
+				<div class="contact__container">
+					<h2 class="contact__title title">Contact.</h2>
+					<div class="contact__text text">
 						<p>Get in touch — let’s work together.</p>
 					</div>
+					<div class="contact__body body-contact">
+						<div class="body-contact__info info-body-contact">
+							<div class="info-body-contact__contacts">
+								<div class="info-body-contact__email">
+									<span>Email:</span>
+									<a href="mailto:musienko.work@gmail.com">musienko.work@gmail.com</a>
+								</div>
+							</div>
+							<ul class="info-body-contact__social social-contact">
+								<li class="social-contact__item">
+									<a class="social-contact__link _icon-linkedin" style="--clr: #0a66c2" target="_blank" href="https://www.linkedin.com/in/ruslan-musienko-934817251/">Linkedin</a>
+								</li>
+								<li class="social-contact__item">
+									<a class="social-contact__link _icon-telegram" style="--clr: #00a0e3" target="_blank" href="https://t.me/gamarjkeee">Telegram</a>
+								</li>
+								<li class="social-contact__item">
+									<a class="social-contact__link _icon-facebook" style="--i: 3; --clr: #0866ff" target="_blank" href="https://www.facebook.com/profile.php?id=100013996774131">Facebook</a>
+								</li>
+							</ul>
+							<div class="info-body-contact__bottom"></div>
+						</div>
+						<form class="body-contact__form form" action="sendmail/sendmail.php" enctype="multipart/form-data" method="POST">
+							<div class="form__line">
+								<label for="name" class="form__label">Your Name:</label>
+								<input required type="text" name="name" data-error="Error" placeholder="What's Your Name?" class="form__input" />
+								<span></span>
+							</div>
+							<div class="form__line">
+								<label for="email" class="form__label">Your email address:</label>
+								<input type="email" name="email" required data-error="Error" placeholder="What's Your email address?" class="form__input" />
+								<span></span>
+							</div>
+							<div class="form__line">
+								<label for="message" class="form__label">Your message:</label>
+								<textarea required rows="5" autocomplete="off" name="message" placeholder="What's Your message?" data-error="Помилка" class="form__textarea"></textarea>
+								<span><i></i><i></i><i></i><i></i></span>
+							</div>
+							<div class="form__line">
+								<button type="submit" class="form__button button">
+									Send message
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="contact__map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14563958.082093861!2d14.75896829205457!3d50.9380160943407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14b866064977f%3A0xf8dce723a9cbb5d8!2sCherkasy%2C%20Cherkasy%20Oblast%2C%2018000!5e0!3m2!1sen!2sua!4v1697615702541!5m2!1sen!2sua" style="border: 0; margin-bottom: -2px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<a href="#" class="footer__button"> <span class="_icon-arrow-up"></span></a>
+			<a href="#" data-goto-header data-goto=".main" class="footer__button">
+				<span class="_icon-arrow-up"></span></a>
 			<div class="footer__top top-footer">
 				<div class="top-footer__container">
 					<div class="top-footer__top">
@@ -417,7 +600,88 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20231011190907"></script>
+	<div id="popup-01" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__image">
+					<picture><source srcset="img/portfolio/01.webp" type="image/webp"><img src="img/portfolio/01.jpg" alt="Image" /></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-02" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__image">
+					<picture><source srcset="img/portfolio/02.webp" type="image/webp"><img src="img/portfolio/02.jpg" alt="Image" /></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-03" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__image">
+					<picture><source srcset="img/portfolio/03.webp" type="image/webp"><img src="img/portfolio/03.jpg" alt="Image" /></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-04" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__image">
+					<picture><source srcset="img/portfolio/04.webp" type="image/webp"><img src="img/portfolio/04.jpg" alt="Image" /></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-05" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__image">
+					<picture><source srcset="img/portfolio/05.webp" type="image/webp"><img src="img/portfolio/05.jpg" alt="Image" /></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-06" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__image">
+					<picture><source srcset="img/portfolio/06.webp" type="image/webp"><img src="img/portfolio/06.jpg" alt="Image" /></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-07" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__image">
+					<picture><source srcset="img/portfolio/07.webp" type="image/webp"><img src="img/portfolio/07.jpg" alt="Image" /></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="popup-08" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-close"></button>
+				<div class="popup__image">
+					<picture><source srcset="img/portfolio/08.webp" type="image/webp"><img src="img/portfolio/08.jpg" alt="Image" /></picture>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20231020215616"></script>
 </body>
 
 </html>
