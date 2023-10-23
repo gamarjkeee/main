@@ -737,16 +737,16 @@
             saveTheme ? localStorage.setItem("user-theme", newTheme) : null;
         }
     }
-    const skillsItems = document.querySelectorAll(".card-skills__rating");
+    const skillsItems = document.querySelectorAll(".card-main-skills__rating");
     for (let i = 0; i < skillsItems.length; i++) {
         const skillsItem = skillsItems[i];
-        document.getElementsByClassName("card-skills__block");
+        document.getElementsByClassName("card-main-skills__block");
         for (let j = 0; j < 100; j++) {
             let rotate = 3.6 * j + "deg";
-            skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s;" class="card-skills__block"></div>`;
+            skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s;" class="card-main-skills__block"></div>`;
         }
     }
-    const counters = document.querySelectorAll(".card-skills__counter");
+    const counters = document.querySelectorAll(".card-main-skills__counter");
     for (let i = 0; i < counters.length; i++) {
         const counter = counters[i];
         counter.innerText = 0;
@@ -770,15 +770,6 @@
         aboutInfo.classList.toggle("active-info");
         aboutMeButton.classList.toggle("active-button");
     }));
-    const mainInfo = document.querySelector(".info-main");
-    const totalWidth = document.documentElement.clientWidth;
-    console.log(totalWidth);
-    const containerWidth = 1400;
-    let paddingLeftForMainInfo = 0;
-    if (totalWidth > containerWidth) {
-        paddingLeftForMainInfo = (totalWidth - containerWidth) / 2 + 15;
-        mainInfo.style.paddingLeft = `${paddingLeftForMainInfo}px`;
-    } else mainInfo.style.paddingLeft = `15px`;
     let toggleSocial = document.querySelector(".social__toggle");
     let menuSocial = document.querySelector(".social");
     toggleSocial.addEventListener("click", (() => {

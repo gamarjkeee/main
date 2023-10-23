@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20231020215616">
+	<link rel="stylesheet" href="css/style.min.css?_v=20231023095250">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -72,36 +72,38 @@
 				</li>
 			</ul>
 			<section class="main" data-watch="navigator" data-watch-threshold="0.5">
-				<div class="main__info info-main">
-					<h1 class="info-main__title title title--main">
-						Hello my friend! <span>Welcome</span> on my personal site.
-					</h1>
-					<div class="info-main__text text">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-							libero atque cum nesciunt voluptate dolores tenetur consectetur
-							iusto placeat nemo. Id maxime voluptatem maiores omnis
-							reiciendis fugit adipisci nobis debitis!
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-							libero atque cum nesciunt voluptate dolores tenetur consectetur
-							iusto placeat nemo.
-						</p>
+				<div class="main__container">
+					<div class="main__info info-main">
+						<h1 class="info-main__title title title--main">
+							Hello my friend! <span>Welcome</span> on my personal site.
+						</h1>
+						<div class="info-main__text text">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+								libero atque cum nesciunt voluptate dolores tenetur
+								consectetur iusto placeat nemo. Id maxime voluptatem maiores
+								omnis reiciendis fugit adipisci nobis debitis!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+								libero atque cum nesciunt voluptate dolores tenetur
+								consectetur iusto placeat nemo.
+							</p>
+						</div>
+						<a class="info-main__button button" href="#" data-goto-header data-goto=".portfolio">View Portfolio</a>
 					</div>
-					<a class="info-main__button button" href="#" data-goto-header data-goto=".portfolio">View Portfolio</a>
-				</div>
-				<div class="main__image">
-					<img src="img/main/done/01.svg" data-prlx-mouse data-prlx-cy="1500" data-prlx-cx="600" alt="Image" />
-					<img src="img/main/done/02.svg" data-prlx-mouse data-prlx-cy="1500" data-prlx-cx="600" alt="Image" />
-					<img src="img/main/done/03.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
-					<img src="img/main/done/04.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
-					<img src="img/main/done/05.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
-					<img src="img/main/done/06.svg" data-prlx-mouse data-prlx-cy="600" data-prlx-cx="250" alt="Image" />
-					<img src="img/main/done/07.svg" data-prlx-mouse data-prlx-cy="600" data-prlx-cx="250" alt="Image" />
-					<img src="img/main/done/08.svg" data-prlx-mouse data-prlx-cy="450" data-prlx-cx="150" alt="Image" />
-					<img src="img/main/done/09.svg" data-prlx-mouse data-prlx-cy="450" data-prlx-cx="150" alt="Image" />
-					<img src="img/main/main.svg" alt="Image" />
+					<div class="main__image">
+						<img src="img/main/done/01.svg" data-prlx-mouse data-prlx-cy="1500" data-prlx-cx="600" alt="Image" />
+						<img src="img/main/done/02.svg" data-prlx-mouse data-prlx-cy="1500" data-prlx-cx="600" alt="Image" />
+						<img src="img/main/done/03.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
+						<img src="img/main/done/04.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
+						<img src="img/main/done/05.svg" data-prlx-mouse data-prlx-cy="800" data-prlx-cx="350" alt="Image" />
+						<img src="img/main/done/06.svg" data-prlx-mouse data-prlx-cy="600" data-prlx-cx="250" alt="Image" />
+						<img src="img/main/done/07.svg" data-prlx-mouse data-prlx-cy="600" data-prlx-cx="250" alt="Image" />
+						<img src="img/main/done/08.svg" data-prlx-mouse data-prlx-cy="450" data-prlx-cx="150" alt="Image" />
+						<img src="img/main/done/09.svg" data-prlx-mouse data-prlx-cy="450" data-prlx-cx="150" alt="Image" />
+						<img src="img/main/main.svg" alt="Image" />
+					</div>
 				</div>
 			</section>
 			<section class="about" data-watch="navigator" data-watch-threshold="0.5">
@@ -288,83 +290,94 @@
 				<div class="skills__container">
 					<h2 class="skills__title title">Skills.</h2>
 					<div class="skills__text text">
-						<p>A few words about my skills.</p>
+						<p>About my skills and technologies that I use</p>
 					</div>
 					<div class="skills__body">
-						<div class="skills__top">
-							<h3 class="skills__label _icon-ninja">Main skills:</h3>
-							<div class="skills__cards">
-								<div class="skills__card card-skills">
-									<div class="card-skills__rating">
-										<h2 class="card-skills__title">
-											<span class="card-skills__counter" data-target="90">90</span><sup>%</sup><br />HTML
+						<div class="skills__main main-skills">
+							<h3 class="main-skills__title _icon-ninja">Main skills:</h3>
+							<div class="main-skills__cards">
+								<div class="main-skills__card card-main-skills">
+									<div class="card-main-skills__rating">
+										<h2 class="card-main-skills__title">
+											<span class="card-main-skills__counter" data-target="90">90</span><sup>%</sup><br />HTML
 										</h2>
 									</div>
 								</div>
-								<div class="skills__card card-skills">
-									<div class="card-skills__rating">
-										<h2 class="card-skills__title">
-											<span class="card-skills__counter" data-target="85">85</span><sup>%</sup><br />CSS, SCSS
+								<div class="main-skills__card card-main-skills">
+									<div class="card-main-skills__rating">
+										<h2 class="card-main-skills__title">
+											<span class="card-main-skills__counter" data-target="85">85</span><sup>%</sup><br />CSS, SCSS
 										</h2>
 									</div>
 								</div>
-								<div class="skills__card card-skills">
-									<div class="card-skills__rating">
-										<h2 class="card-skills__title">
-											<span class="card-skills__counter" data-target="55">55</span><sup>%</sup><br />Java Script
+								<div class="main-skills__card card-main-skills">
+									<div class="card-main-skills__rating">
+										<h2 class="card-main-skills__title">
+											<span class="card-main-skills__counter" data-target="55">55</span><sup>%</sup><br />Java Script
 										</h2>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="skills__bottom">
-							<div class="skills__secondary secondary-skills">
-								<h3 class="secondary-skills__label _icon-code">
-									Technologies that I use:
-								</h3>
-								<ul class="secondary-skills__items">
-									<li class="secondary-skills__item">
-										Flexbox, CSS Grid Layout
-									</li>
-									<li class="secondary-skills__item">BEM</li>
-									<li class="secondary-skills__item">SASS (SCSS)</li>
-									<li class="secondary-skills__item">Git, GitHub</li>
-									<li class="secondary-skills__item">Gulp, Webpack</li>
-									<li class="secondary-skills__item">Figma, Photoshop</li>
-									<li class="secondary-skills__item">Iconic font</li>
-									<li class="secondary-skills__item">CSS/JS animations</li>
-								</ul>
+						<div class="skills__technologies technologies-skills">
+							<h3 class="technologies-skills__title _icon-code">
+								Technologies that I use:
+							</h3>
+							<ul class="technologies-skills__items">
+								<li class="technologies-skills__item">
+									Flexbox, CSS Grid Layout
+								</li>
+								<li class="technologies-skills__item">BEM</li>
+								<li class="technologies-skills__item">SASS (SCSS)</li>
+								<li class="technologies-skills__item">Git, GitHub</li>
+								<li class="technologies-skills__item">Gulp, Webpack</li>
+								<li class="technologies-skills__item">Figma, Photoshop</li>
+								<li class="technologies-skills__item">Iconic font</li>
+								<li class="technologies-skills__item">CSS/JS animations</li>
+							</ul>
+							<div class="technologies-skills__icons">
+								<img src="img/skills/icons/html.svg" alt="Icon" />
+								<img src="img/skills/icons/css.svg" alt="Icon" />
+								<img src="img/skills/icons/javascript.svg" alt="Icon" />
+								<img src="img/skills/icons/sass.svg" alt="Icon" />
+								<img src="img/skills/icons/gulp.svg" alt="Icon" />
+								<img src="img/skills/icons/webpack.svg" alt="Icon" />
+								<img src="img/skills/icons/bem.svg" alt="Icon" />
+								<img src="img/skills/icons/git.svg" alt="Icon" />
+								<img src="img/skills/icons/github.svg" alt="Icon" />
+								<img src="img/skills/icons/figma.svg" alt="Icon" />
+								<img src="img/skills/icons/photoshop.svg" alt="Icon" />
 							</div>
-							<div class="skills__about-work about-work-skills">
-								<h3 class="about-work-skills__label _icon-case">
-									My work includes:
-								</h3>
-								<ul class="about-work-skills__items">
-									<li class="about-work-skills__item _icon-checkmark">
-										Responsive adaptive website for any screen.
-									</li>
-									<li class="about-work-skills__item _icon-checkmark">
-										Cross-browser compatibility (Chrome, Firefox, Yandex,
-										Microsoft Edge, Opera, Safari).
-									</li>
-									<li class="about-work-skills__item _icon-checkmark">
-										Checking the addition of content. Site doesn't break when
-										replacing images or text.
-									</li>
-									<li class="about-work-skills__item _icon-checkmark">
-										CSS3 and JavaScript animations (if needed).
-									</li>
-									<li class="about-work-skills__item _icon-checkmark">
-										Understandable code.
-									</li>
-									<li class="about-work-skills__item _icon-checkmark">
-										Optimization of website loading.
-									</li>
-									<li class="about-work-skills__item _icon-checkmark">
-										A piece of my soul for each project.
-									</li>
-								</ul>
-							</div>
+						</div>
+						<div class="skills__about-work about-work-skills">
+							<h3 class="about-work-skills__title _icon-case">
+								My work includes:
+							</h3>
+							<ul class="about-work-skills__items">
+								<li class="about-work-skills__item _icon-checkmark">
+									Responsive adaptive website for any screen.
+								</li>
+								<li class="about-work-skills__item _icon-checkmark">
+									Cross-browser compatibility (Chrome, Firefox, Yandex,
+									Microsoft Edge, Opera, Safari).
+								</li>
+								<li class="about-work-skills__item _icon-checkmark">
+									Checking the addition of content. Site doesn't break when
+									replacing images or text.
+								</li>
+								<li class="about-work-skills__item _icon-checkmark">
+									CSS3 and JavaScript animations (if needed).
+								</li>
+								<li class="about-work-skills__item _icon-checkmark">
+									Understandable code.
+								</li>
+								<li class="about-work-skills__item _icon-checkmark">
+									Optimization of website loading.
+								</li>
+								<li class="about-work-skills__item _icon-checkmark">
+									A piece of my soul for each project.
+								</li>
+							</ul>
 						</div>
 						<a href="#" data-goto-header data-goto=".contact" class="skills__button button">Let’s work together</a>
 					</div>
@@ -509,23 +522,19 @@
 									<a class="social-contact__link _icon-facebook" style="--i: 3; --clr: #0866ff" target="_blank" href="https://www.facebook.com/profile.php?id=100013996774131">Facebook</a>
 								</li>
 							</ul>
-							<div class="info-body-contact__bottom"></div>
 						</div>
 						<form class="body-contact__form form" action="sendmail/sendmail.php" enctype="multipart/form-data" method="POST">
 							<div class="form__line">
 								<label for="name" class="form__label">Your Name:</label>
 								<input required type="text" name="name" data-error="Error" placeholder="What's Your Name?" class="form__input" />
-								<span></span>
 							</div>
 							<div class="form__line">
 								<label for="email" class="form__label">Your email address:</label>
 								<input type="email" name="email" required data-error="Error" placeholder="What's Your email address?" class="form__input" />
-								<span></span>
 							</div>
 							<div class="form__line">
 								<label for="message" class="form__label">Your message:</label>
 								<textarea required rows="5" autocomplete="off" name="message" placeholder="What's Your message?" data-error="Помилка" class="form__textarea"></textarea>
-								<span><i></i><i></i><i></i><i></i></span>
 							</div>
 							<div class="form__line">
 								<button type="submit" class="form__button button">
@@ -681,7 +690,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20231020215616"></script>
+	<script src="js/app.min.js?_v=20231023095250"></script>
 </body>
 
 </html>
