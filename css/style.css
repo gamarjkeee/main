@@ -3507,7 +3507,7 @@ body::after {
 
   .main__image img:nth-child(10) {
     margin-bottom: 0.9375rem;
-    max-width: 60%;
+    max-width: 50%;
   }
 
   .info-main__title {
@@ -3611,7 +3611,7 @@ body::after {
 
   .main__image img:nth-child(10) {
     margin-bottom: 0.9375rem;
-    max-width: 80%;
+    max-width: 60%;
   }
 
   .item-education-about {
