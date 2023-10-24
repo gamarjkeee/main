@@ -1128,7 +1128,7 @@ body::after {
   grid-template-columns: 1fr 1fr;
 }
 
-.main__image-mobile {
+.main__image-mobile picture {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -3517,6 +3517,10 @@ body::after {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+
+  .main__image-mobile {
+    margin-bottom: 0.9375rem;
   }
 
   .main__image-mobile img {
