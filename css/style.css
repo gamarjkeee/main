@@ -1293,6 +1293,7 @@ body::after {
 
 .main__image img {
   max-width: 100%;
+  will-change: transform;
 }
 
 .main__image img:nth-child(1) {
