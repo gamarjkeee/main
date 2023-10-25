@@ -1284,6 +1284,7 @@ body::after {
 }
 
 .main__image {
+  will-change: contents;
   position: relative;
   pointer-events: none;
   -ms-flex-item-align: center;
@@ -1293,7 +1294,7 @@ body::after {
 
 .main__image img {
   max-width: 100%;
-  will-change: transform;
+  will-change: contents;
 }
 
 .main__image img:nth-child(1) {
