@@ -747,7 +747,6 @@
     const skillsItems = document.querySelectorAll(".card-main-skills__rating");
     for (let i = 0; i < skillsItems.length; i++) {
         const skillsItem = skillsItems[i];
-        document.getElementsByClassName("card-main-skills__block");
         for (let j = 0; j < 100; j++) {
             let rotate = 3.6 * j + "deg";
             skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s;" class="card-main-skills__block"></div>`;
