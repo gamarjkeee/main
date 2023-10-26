@@ -1638,6 +1638,16 @@ body::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: translateY(1.5625rem);
+      -ms-transform: translateY(1.5625rem);
+          transform: translateY(1.5625rem);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.about__image-mobile._watcher-view {
+  -webkit-animation: to-top-mobile 0.6s ease 0.3s forwards;
+          animation: to-top-mobile 0.6s ease 0.3s forwards;
 }
 
 .about__image-mobile picture {
@@ -4089,32 +4099,6 @@ body::after {
             animation: to-top-mobile 0.6s ease 0.3s forwards;
   }
 
-  .about__image-mobile {
-    -webkit-transform: translateY(1.5625rem);
-        -ms-transform: translateY(1.5625rem);
-            transform: translateY(1.5625rem);
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .about__image-mobile._watcher-view {
-    -webkit-animation: to-top-mobile 0.6s ease 0.3s forwards;
-            animation: to-top-mobile 0.6s ease 0.3s forwards;
-  }
-
-  .about__image-mobile picture {
-    -webkit-transform: translateY(1.5625rem);
-        -ms-transform: translateY(1.5625rem);
-            transform: translateY(1.5625rem);
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .about__image-mobile picture._watcher-view {
-    -webkit-animation: to-top-mobile 0.6s ease 0.3s forwards;
-            animation: to-top-mobile 0.6s ease 0.3s forwards;
-  }
-
   .about__image-mobile img {
     max-width: 50%;
   }
@@ -4364,11 +4348,6 @@ body::after {
   }
 
   .about__image-mobile._watcher-view {
-    -webkit-animation: to-top-mobile 0.6s ease 0.9s forwards;
-            animation: to-top-mobile 0.6s ease 0.9s forwards;
-  }
-
-  .about__image-mobile picture._watcher-view {
     -webkit-animation: to-top-mobile 0.6s ease 0.9s forwards;
             animation: to-top-mobile 0.6s ease 0.9s forwards;
   }
