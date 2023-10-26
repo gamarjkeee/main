@@ -4106,7 +4106,7 @@ body::after {
             animation: to-top-mobile 0.6s ease 0.3s forwards;
   }
 
-  .about__image-mobile._watcher-view {
+  .about__image-mobile picture._watcher-view {
     -webkit-animation: opacity 0.6s ease 0.3s forwards;
             animation: opacity 0.6s ease 0.3s forwards;
   }
@@ -4359,7 +4359,7 @@ body::after {
     padding-right: 1.875rem;
   }
 
-  .about__image-mobile._watcher-view {
+  .about__image-mobile picture._watcher-view {
     -webkit-animation: opacity 0.6s ease 0.9s forwards;
             animation: opacity 0.6s ease 0.9s forwards;
   }
