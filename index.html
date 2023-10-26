@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231025135951" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231026100505" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -122,7 +122,7 @@
 						<div data-watch="navigator" data-watch-threshold="0.2" data-watch-once class="about__image">
 							<img src="img/about/main.svg" alt="Photo" />
 						</div>
-						<div class="about__image-mobile">
+						<div data-watch="navigator" data-watch-threshold="0.6" data-watch-once class="about__image-mobile">
 							<picture><source srcset="img/about/main-mobile.webp" type="image/webp"><img src="img/about/main-mobile.png" alt="Photo" /></picture>
 						</div>
 						<div data-watch="navigator" data-watch-threshold="0.2" data-watch-once class="about__main-text main-text-about">
@@ -289,14 +289,6 @@
 								</a>
 							</div>
 						</div>
-						<div data-watch="navigator" data-watch-threshold="0.5" data-watch-once class="education-about__more">
-							<p>
-								I also spent many hours studying on
-								<a target="_blank" href="https://www.youtube.com/watch?v=yJcCKuxfb2o&list=PLM6XATa8CAG4F9nAIYNS5oAiPotxwLFIr">a special playlist of lessons YouTube</a>. After that, I practiced for more than half a year. Namely,
-								I did all the projects for the portfolio and several
-								commercial projects.
-							</p>
-						</div>
 						<a data-watch="navigator" data-watch-threshold="1" data-watch-once class="education-about__button button" href="#" data-goto-header data-goto=".portfolio">My Portfolio here</a>
 					</div>
 				</div>
@@ -310,24 +302,26 @@
 						<p>About my skills and technologies that I use</p>
 					</div>
 					<div class="skills__body">
-						<div data-watch="navigator" data-watch-threshold="0.75" data-watch-once class="skills__main main-skills">
-							<h3 class="main-skills__title _icon-ninja">Main skills:</h3>
-							<div class="main-skills__cards">
-								<div class="main-skills__card card-main-skills">
+						<div class="skills__main main-skills">
+							<h3 data-watch="navigator" data-watch-threshold="1" data-watch-once class="main-skills__title _icon-ninja">
+								Main skills:
+							</h3>
+							<div data-watch="navigator" data-watch-threshold="0.75" data-watch-once class="main-skills__cards">
+								<div data-watch="navigator" data-watch-threshold="0.75" data-watch-once class="main-skills__card card-main-skills">
 									<div class="card-main-skills__rating">
 										<h2 class="card-main-skills__title">
 											<span class="card-main-skills__counter" data-target="90">90</span><sup>%</sup><br />HTML
 										</h2>
 									</div>
 								</div>
-								<div class="main-skills__card card-main-skills">
+								<div data-watch="navigator" data-watch-threshold="0.75" data-watch-once class="main-skills__card card-main-skills">
 									<div class="card-main-skills__rating">
 										<h2 class="card-main-skills__title">
 											<span class="card-main-skills__counter" data-target="85">85</span><sup>%</sup><br />CSS, SCSS
 										</h2>
 									</div>
 								</div>
-								<div class="main-skills__card card-main-skills">
+								<div data-watch="navigator" data-watch-threshold="0.75" data-watch-once class="main-skills__card card-main-skills">
 									<div class="card-main-skills__rating">
 										<h2 class="card-main-skills__title">
 											<span class="card-main-skills__counter" data-target="55">55</span><sup>%</sup><br />Java Script
@@ -337,22 +331,36 @@
 							</div>
 						</div>
 						<div class="skills__technologies technologies-skills">
-							<h3 class="technologies-skills__title _icon-code">
+							<h3 data-watch="navigator" data-watch-threshold="1" data-watch-once class="technologies-skills__title _icon-code">
 								Technologies that I use:
 							</h3>
-							<ul class="technologies-skills__items">
-								<li class="technologies-skills__item">
+							<ul data-watch="navigator" data-watch-threshold="0.4" data-watch-once class="technologies-skills__items">
+								<li style="--nmbr: 1" class="technologies-skills__item">
 									Flexbox, CSS Grid Layout
 								</li>
-								<li class="technologies-skills__item">BEM</li>
-								<li class="technologies-skills__item">SASS (SCSS)</li>
-								<li class="technologies-skills__item">Git, GitHub</li>
-								<li class="technologies-skills__item">Gulp, Webpack</li>
-								<li class="technologies-skills__item">Figma, Photoshop</li>
-								<li class="technologies-skills__item">Iconic font</li>
-								<li class="technologies-skills__item">CSS/JS animations</li>
+								<li style="--nmbr: 2" class="technologies-skills__item">
+									BEM
+								</li>
+								<li style="--nmbr: 3" class="technologies-skills__item">
+									SASS (SCSS)
+								</li>
+								<li style="--nmbr: 4" class="technologies-skills__item">
+									Git, GitHub
+								</li>
+								<li style="--nmbr: 5" class="technologies-skills__item">
+									Gulp, Webpack
+								</li>
+								<li style="--nmbr: 6" class="technologies-skills__item">
+									Figma, Photoshop
+								</li>
+								<li style="--nmbr: 7" class="technologies-skills__item">
+									Iconic font
+								</li>
+								<li style="--nmbr: 8" class="technologies-skills__item">
+									CSS/JS animations
+								</li>
 							</ul>
-							<div class="technologies-skills__icons">
+							<div data-watch="navigator" data-watch-threshold="1" data-watch-once class="technologies-skills__icons">
 								<img src="img/skills/icons/html.svg" alt="Icon" />
 								<img src="img/skills/icons/css.svg" alt="Icon" />
 								<img src="img/skills/icons/javascript.svg" alt="Icon" />
@@ -367,36 +375,36 @@
 							</div>
 						</div>
 						<div class="skills__about-work about-work-skills">
-							<h3 class="about-work-skills__title _icon-case">
+							<h3 data-watch="navigator" data-watch-threshold="1" data-watch-once class="about-work-skills__title _icon-case">
 								My work includes:
 							</h3>
-							<ul class="about-work-skills__items">
-								<li class="about-work-skills__item _icon-checkmark">
+							<ul data-watch="navigator" data-watch-threshold="0.4" data-watch-once class="about-work-skills__items">
+								<li style="--nmbr: 1" class="about-work-skills__item _icon-checkmark">
 									Responsive adaptive website for any screen.
 								</li>
-								<li class="about-work-skills__item _icon-checkmark">
+								<li style="--nmbr: 2" class="about-work-skills__item _icon-checkmark">
 									Cross-browser compatibility (Chrome, Firefox, Yandex,
 									Microsoft Edge, Opera, Safari).
 								</li>
-								<li class="about-work-skills__item _icon-checkmark">
+								<li style="--nmbr: 3" class="about-work-skills__item _icon-checkmark">
 									Checking the addition of content. Site doesn't break when
 									replacing images or text.
 								</li>
-								<li class="about-work-skills__item _icon-checkmark">
+								<li style="--nmbr: 4" class="about-work-skills__item _icon-checkmark">
 									CSS3 and JavaScript animations (if needed).
 								</li>
-								<li class="about-work-skills__item _icon-checkmark">
+								<li style="--nmbr: 5" class="about-work-skills__item _icon-checkmark">
 									Understandable code.
 								</li>
-								<li class="about-work-skills__item _icon-checkmark">
+								<li style="--nmbr: 6" class="about-work-skills__item _icon-checkmark">
 									Optimization of website loading.
 								</li>
-								<li class="about-work-skills__item _icon-checkmark">
+								<li style="--nmbr: 7" class="about-work-skills__item _icon-checkmark">
 									A piece of my soul for each project.
 								</li>
 							</ul>
 						</div>
-						<a href="#" data-goto-header data-goto=".contact" class="skills__button button">Let’s work together</a>
+						<a data-watch="navigator" data-watch-threshold="1" data-watch-once href="#" data-goto-header data-goto=".contact" class="skills__button button">Let’s work together</a>
 					</div>
 				</div>
 			</section>
@@ -574,7 +582,7 @@
 				</div>
 			</section>
 		</main>
-		<footer data-watch="navigator" data-watch-threshold="0.5" data-watch-once class="footer">
+		<footer class="footer">
 			<a href="#" data-goto-header data-goto=".main" class="footer__button">
 				<span class="_icon-arrow-up"></span></a>
 			<div class="footer__top top-footer">
@@ -734,7 +742,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20231025135951"></script>
+	<script src="js/app.min.js?_v=20231026100505"></script>
 </body>
 
 </html>
