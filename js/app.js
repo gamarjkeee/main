@@ -744,31 +744,44 @@
             saveTheme ? localStorage.setItem("user-theme", newTheme) : null;
         }
     }
-    const skillsItems = document.querySelectorAll(".card-main-skills__rating");
-    for (let i = 0; i < skillsItems.length; i++) {
-        const skillsItem = skillsItems[i];
-        for (let j = 0; j < 100; j++) {
-            let rotate = 3.6 * j + "deg";
-            skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s;" class="card-main-skills__block"></div>`;
-        }
-    }
-    const counters = document.querySelectorAll(".card-main-skills__counter");
-    for (let i = 0; i < counters.length; i++) {
-        const counter = counters[i];
-        counter.innerText = 0;
-        const target = +counter.getAttribute("data-target");
-        const timeForAnimate = 2500 / 100;
-        const numberCounter = () => {
-            const value = +counter.innerText;
-            if (value < target) {
-                counter.innerText = Math.ceil(value + 1);
-                setTimeout((() => {
-                    numberCounter();
-                }), timeForAnimate);
+    const windowInnerWidth = document.documentElement.clientWidth;
+    console.log(windowInnerWidth);
+    let timeOutValue = 0;
+    windowInnerWidth >= 1500 ? timeOutValue = 900 : timeOutValue = 600;
+    const skillMain = document.querySelector(".main-skills");
+    document.addEventListener("watcherCallback", (function(e) {
+        const entry = e.detail.entry;
+        const targetElement = entry.target;
+        if (targetElement === skillMain) setTimeout((function() {
+            const skillsItems = document.querySelectorAll(".card-main-skills__rating");
+            for (let i = 0; i < skillsItems.length; i++) {
+                const skillsItem = skillsItems[i];
+                for (let j = 0; j < 100; j++) {
+                    let rotate = 3.6 * j + "deg";
+                    if (i === 0) if (j < 90) skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s; background-color:#10bb00;" class="card-main-skills__block"></div>`; else skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s; background-color:#000000;" class="card-main-skills__block"></div>`;
+                    if (i === 1) if (j < 85) skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s; background-color:#cf649b;" class="card-main-skills__block"></div>`; else skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s; background-color:#000000;" class="card-main-skills__block"></div>`;
+                    if (i === 2) if (j < 55) skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s; background-color:#efd917;" class="card-main-skills__block"></div>`; else skillsItem.innerHTML += `<div style="transform: rotate(${rotate}); animation-delay: ${j / 40}s; background-color:#000000;" class="card-main-skills__block"></div>`;
+                }
             }
-        };
-        numberCounter();
-    }
+            const counters = document.querySelectorAll(".card-main-skills__counter");
+            for (let i = 0; i < counters.length; i++) {
+                const counter = counters[i];
+                counter.innerText = 0;
+                const target = +counter.getAttribute("data-target");
+                const timeForAnimate = 2500 / 100;
+                const numberCounter = () => {
+                    const value = +counter.innerText;
+                    if (value < target) {
+                        counter.innerText = Math.ceil(value + 1);
+                        setTimeout((() => {
+                            numberCounter();
+                        }), timeForAnimate);
+                    }
+                };
+                numberCounter();
+            }
+        }), timeOutValue);
+    }));
     const aboutMeButton = document.querySelector(".main-text-about__button");
     const aboutInfo = document.querySelector(".about__main-text");
     console.log(aboutMeButton);
